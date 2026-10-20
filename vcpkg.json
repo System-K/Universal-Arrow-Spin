@@ -1,18 +1,8 @@
 {
-    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
-    "name": "universal-arrow-spin",
-    "version-string": "1.0",
-    "dependencies": [
-        "clib-util",
-        "directxtk",
-        "rapidcsv",
-        "spdlog"
-    ],
-    "overrides": [
-        {
-            "name": "fmt",
-            "version": "9.1.0"
-        }
-    ],
-    "builtin-baseline": "78b61582c9e093fda56a01ebb654be15a0033897"
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "universal-arrow-spin",
+  "version-string": "0.1.0.0",
+  "description": "SKSE-Hotfixes build: only what Universal Arrow Spin and CommonLibSSE-NG 11 actually use (clib-util is not used)",
+  "dependencies": ["directxmath", "directxtk", "fmt", "spdlog", "xbyak", "rsm-binary-io", "rapidcsv"],
+  "builtin-baseline": "e456309491fd875487bf02b8a0dca76c1b1b00cc"
 }
